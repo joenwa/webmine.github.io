@@ -1,0 +1,96 @@
+ /* my first css */
+
+ html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+ 
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(239, 239, 247);
+ }
+ img{
+    border: 10px solid green;
+ }
+ h1{
+    border: 5px dotted rgb(34, 6, 11);
+ }
+
+ /* selecting html elements */
+blockquote{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+}
+cite{
+    font-size: 2rem;
+}
+
+/*css class */
+/* you start class name with period */
+.bigbold{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: brown;
+}
+ol{
+    color: orange;
+}
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}
+a:visited{
+    color: green;
+    font-size: 2rem;
+    font-weight: normal;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+    background-color: black;
+}
+
+/* div{
+    border: 5px solid blue;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: orange;
+} */
+.box1{
+    border: 5px red solid;
+    background-color: lightblue;
+}
+
+/* CSS for cv page */
+.contact{
+    background-color: blue;
+    width: 20%;
+    /* height: 200px; */
+    border: none;
+    float:left;
+    margin: 0; 
+    padding-left: 5px;
+    color: white;
+}
+
+.content{
+    background-color: rgb(239, 239, 247);
+    width: 79%;
+    /* height: 200px; */
+    border: none;
+    float: right;
+    margin:0; 
+    padding: 2px;
+}
+/* Clear float */
+.content::after{
+    content: "";
+    display: table;
+    clear: both;
+}

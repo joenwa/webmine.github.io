@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="blog.html">Home</a> </li>
+                <li><a href="#">Posts</a> </li>
+                <li><a href="#">Services</a> </li>
+                <li><a href="mycv.html">About Us</a> </li>
+                <li><a href="form.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1>Contact Form</h1>
+            <form>
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    <label for="name"> Your name</label>
+                    <input type="text" id="name" name="name">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>About your Interest</legend>
+                    <label for="date">Requested Date</label>
+                    <input type="date" id="date" name="date">
+                    <label for="qty">How many areas do you want to learn</label>
+                    <input type="number" id="qty" name="qty" min="1" max="10">
+
+                    <p>What type of Training do you Prefer?</p>
+                    <label>
+                        <input type="radio" name="TrainType" value="TrainType">
+                        Star War-Style Imperial Cruiser 
+                    </label>
+
+                    <!-- Using Selection -->
+                    <label for="abtype">What type of Training</label>
+                    <select id="abtype">
+                        <option value="tour">Tour of the Solar System</option>
+                        <option value="dinner">Alien Dinner and Discussion</option>
+                        <option value="dance">Alien dance lessons</option>
+                        <option value="whales">Whale watching</option>
+                        <option selected>Select one ...</option>
+                    </select>
+
+                    <!-- Comment -->
+                    <label for="comments" aria-placeholder="Type your comment">Special requests:</label>
+                    <textarea id="comments" name="comments"> Enter your ideas here</textarea>
+
+                    <!-- Check box -->
+                    <label for="subscribe">
+                        Add me to your email list
+                        <input type="checkbox" value="subscribe" name="subscribe" id="subscribe">
+                    </label>
+
+                </fieldset>
+
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <aside>
+            <h2>Our Contant</h2>
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1667.638839985306!2d7.069696855836634!3d6.219354266524921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104382ec544c5ae9%3A0xc1942d92a4ca7ab2!2s32%20Emma%20Nnaemeka%20Street%2C%20420110%2C%20Awka%2C%20Anambra!5e0!3m2!1sen!2sng!4v1697607175119!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <p>Our Company situate at 32 Emmannaemeka Street, <br> Awka,
+                Awka South L.G.A, <br> Anambra State, <br> Nigeria.
+            </p>
+        </aside>
+    </div>
+
+    
+</body>
+</html>
